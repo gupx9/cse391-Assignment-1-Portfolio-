@@ -1,0 +1,129 @@
+/* for navbar */
+.navbar {
+    background-color: #b8b9ba;
+    padding: 1rem;
+}
+
+.nav-list {
+    list-style: none;
+    display: flex;
+    gap: 2rem;
+    margin: 0;
+    padding: 0;
+}
+
+.nav-link {
+    text-decoration: none;
+    color: #333;
+    font-weight: bold;
+    position: relative;
+    transition: color 0.3s ease;
+}
+
+.nav-link::after {
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: -5px;
+    width: 0;
+    height: 2px;
+    background-color: #484c51; /* underline color*/
+    transition: width 0.3s ease;
+}
+
+
+.work-link:hover {
+    color: #007BFF;
+}
+
+.work-link:hover::after {
+    width: 100%;
+}
+.nav-link:hover {
+    color: #007BFF;
+}
+
+.nav-link:hover::after {
+    width: 100%;
+}
+
+/*for my works*/
+.work-link {
+  color: #333;
+  text-decoration: none;
+  transition: all 0.2s ease;
+  padding-bottom: 2px;
+  border-bottom: 1px solid transparent;
+}
+
+.work-link:hover {
+  color: #2c3e50;
+  border-bottom: 1px solid #2c3e50;
+}
+
+/* ====  Services table  ==== */
+.table-responsive {
+    overflow-x: auto;          /* lets the user scroll on phones */
+}
+
+.services-table {
+    width: 100%;
+    border-collapse: collapse;
+    font-size: 0.95rem;
+}
+
+/* cell borders */
+/* .services-table th {
+    border: 1px solid #f00404;
+    padding: 0.90rem;
+    text-align: left;} */
+.services-table th,
+.services-table td {
+    border: 1px solid #000000;
+    padding: 0.90rem;
+    text-align: left;
+}
+
+/* striped rows */
+.services-table tbody tr:nth-child(odd) {
+    background-color: #cac6c6;
+}
+
+/* hover effect with mouse */
+.services-table tbody tr:hover {
+    background-color: #a9d4e6;
+}
+
+/* table heading */
+.services-table .category-row td {
+    background: #222;
+    color: #fff;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 0.03em;
+}
+
+/* phone view table data*/
+@media (max-width: 600px) {
+    .services-table th,
+    .services-table td {
+        padding: 0.5rem;
+        font-size: 0.85rem;
+    }
+}
+.section-with-image {
+    display: flex;
+    align-items: flex-start;
+    gap: 2rem;
+    padding: 1.5rem 2rem;
+    flex-wrap: wrap; /* helps on small screens */
+}
+
+.section-with-image img {
+    flex: 0 0 auto;
+    border-radius: 8px;
+}
+
+.section-with-image .text-content {
+    flex: 1;
+}
