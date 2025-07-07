@@ -102,7 +102,25 @@
     text-transform: uppercase;
     letter-spacing: 0.03em;
 }
+/* phone view navbar*/
+@media (max-width: 768px) {
+    .navbar {
+        padding: 0; 
+    }
 
+    .nav-list {
+        flex-direction: column;
+        align-items: center;
+        gap: 0;                     /* sing padding  */
+        width: 100%;
+    }
+
+    .nav-link {
+        display: block;
+        width: 100%;             
+        padding: 12px 0;           
+        border-top: 1px solid #999; 
+    }  
 /* phone view table data*/
 @media (max-width: 600px) {
     .services-table th,
